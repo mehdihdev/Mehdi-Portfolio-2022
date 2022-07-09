@@ -14,12 +14,17 @@ export default function Navigation() {
                         </a>
                     </Link>
                     <div className="flex items-end">
-                        <a href="/projects" className="font-medium py-1 mr-4 transition-colors hover:text-yellow-500">
-                            Projects
-                        </a>
-                        <a href="/contact" className="font-medium py-1 transition-colors hover:text-yellow-500">
-                            Contact
-                        </a>
+                        <Link href="/projects">
+                            <a className="font-medium py-1 mr-4 transition-colors hover:text-yellow-500">
+                                Projects
+                            </a>
+                        </Link>
+                        <Link href="/contact">
+                            <a className="font-medium py-1 transition-colors hover:text-yellow-500">
+                                Contact
+                            </a>
+                        </Link>
+
                         <ThemeSwitch />
                     </div>
 
