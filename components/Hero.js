@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import profile from "../public/images/Mehdi.png"
+import Link from 'next/link'
 
 export default function Hero() {
     return(
@@ -20,10 +21,18 @@ export default function Hero() {
                         <p className="mb-4">
                             I&apos;ve worked on several projects such as <span className="font-bold">NC Hack, IABAT iOS</span>, and <span className="font-bold">Nonprofit Foundation</span>. 
                         </p>
+                        <p className="mb-4">
+
+                        <Link href="/files/Mehdi's%20Resume.pdf">
+                            <a className="font-medium py-1 transition-colors hover:text-yellow-500">
+                                Check out my resume here.
+                            </a>
+                        </Link>
+                        </p>
+
                     </div>
                 </div>
                 <div className="animate-fade-in-left flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
-                    <div className="flex flex-col">
                     <Image
                         src={profile}
                         alt="Profile"
@@ -33,8 +42,6 @@ export default function Hero() {
                         height={250}
                         placeholder="blur"
                     />
-                        <a className="inline-block px-6 py-2.5 mt-2 text-center bg-blue-600 text-white font-medium leading-tight rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"target="_blank" rel="noreferrer" href="files/Mehdi's%20Resume.pdf">Resume</a>
-                    </div>
                 </div>
             </div>
         </div>
